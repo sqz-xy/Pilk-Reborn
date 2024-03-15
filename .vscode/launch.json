@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch (Windows)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}\\build\\Debug\\pilk-reborn.exe",
+            "symbolSearchPath": "${workspaceRoot}\\build\\Debug\\pilk-reborn.pdb",
+            "preLaunchTask": "debug-build-win",
+            "cwd": "${workspaceFolder}",
+            "logging": {
+                "moduleLoad": false,
+                "trace": true
+            },
+            "visualizerFile": "${workspaceFolder}/my.natvis",
+            "showDisplayString": true,
+        },
+    ]
+}

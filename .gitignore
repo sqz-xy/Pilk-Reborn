@@ -35,5 +35,5 @@
 *.app
 
 build/
-.vscode/
+#.vscode/
 /.vs
