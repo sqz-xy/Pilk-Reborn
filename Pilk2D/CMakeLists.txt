@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(pilk-reborn VERSION 0.1.0)
+project(pilk-2d VERSION 0.1.0)
 #set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
 link_directories(libs/glfw)
@@ -14,10 +14,10 @@ include_directories(libs/glm)
 include_directories(include)
 
 file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
-add_library(pilk-reborn ${SOURCES} "src/stb/stb_image.cpp")
+add_library(pilk-2d ${SOURCES} "src/stb/stb_image.cpp")
 
 find_package(OpenGL REQUIRED)
-target_link_libraries(pilk-reborn PRIVATE ${OPENGL_gl_LIBRARY})
-target_link_libraries(pilk-reborn PRIVATE glfw3)
+target_link_libraries(pilk-2d PRIVATE ${OPENGL_gl_LIBRARY})
+target_link_libraries(pilk-2d PRIVATE glfw3)
 
 file(COPY resources DESTINATION /)

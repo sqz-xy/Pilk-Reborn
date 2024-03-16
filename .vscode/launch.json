@@ -5,8 +5,8 @@
             "name": "C++ Launch (Windows)",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceRoot}\\build\\Debug\\pilk-reborn.exe",
-            "symbolSearchPath": "${workspaceRoot}\\build\\Debug\\pilk-reborn.pdb",
+            "program": "${workspaceRoot}\\PilkGame\\build\\Debug\\pilk-game.exe",
+            "symbolSearchPath": "${workspaceRoot}\\PilkGame\\build\\Debug\\pilk-game.pdb",
             "preLaunchTask": "debug-build-win",
             "cwd": "${workspaceFolder}",
             "logging": {
