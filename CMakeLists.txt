@@ -10,10 +10,11 @@ include_directories(libs/imgui)
 include_directories(libs/glfw)
 include_directories(libs/stb)
 include_directories(libs/irrKlang)
+include_directories(libs/glm)
 include_directories(include)
 
 file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
-add_executable(pilk-reborn ${SOURCES} "src/stb/stb_image.cpp")
+add_library(pilk-reborn ${SOURCES} "src/stb/stb_image.cpp")
 
 find_package(OpenGL REQUIRED)
 target_link_libraries(pilk-reborn PRIVATE ${OPENGL_gl_LIBRARY})
